@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var temp;
+            function showOne(){
+                var x = document.getElementById("display").value;
+                document.getElementById("display").value = x + "1";
+            }
+            
+            function showTwo(){
+                var x = document.getElementById("display").value;
+                document.getElementById("display").value = x + "2";
+            }
+            
+            function showThree(){
+                var x = document.getElementById("display").value;
+                document.getElementById("display").value = x + "3";
+            }
+            
+            function showFour(){
+                var x = document.getElementById("display").value;
+                document.getElementById("display").value = x + "4";
+            }
+            
+            function showFive(){
+                var x = document.getElementById("display").value;
+                document.getElementById("display").value = x + "5";
+            }
+            
+            function showSix(){
+                var x = document.getElementById("display").value;
+                document.getElementById("display").value = x + "6";
+            }
+            
+            function showSeven(){
+                var x = document.getElementById("display").value;
+                document.getElementById("display").value = x + "7";
+            }
+            
+            function showEight(){
+                var x = document.getElementById("display").value;
+                document.getElementById("display").value = x + "8";
+            }
+            
+            function showNine(){
+                var x = document.getElementById("display").value;
+                document.getElementById("display").value = x + "9";
+            }
+            
+            function showZero(){
+                var x = document.getElementById("display").value;
+                document.getElementById("display").value = x + "0";
+            }
+            
+            function doAdd(){
+                var x = document.getElementById("display").value;
+                document.getElementById("display").value = x + "+";
+            }
+            
+            function doMinus(){
+                var x = document.getElementById("display").value;
+                document.getElementById("display").value = x + "-";
+            }
+            
+            function doMultiplication(){
+                var x = document.getElementById("display").value;
+                document.getElementById("display").value = x + "*";
+            }
+            
+            function doDivide(){
+                var x = document.getElementById("display").value;
+                document.getElementById("display").value = x + "/";
+            }
+            
+            function doEquals(){
+                var x = eval(document.getElementById("display").value);
+                document.getElementById("display").value = x;
+            }
+            
+            function doClear(){
+                document.getElementById("display").value = "";
+            }
+        </script>
+    </head>
+    <body>
+        <form align="center">
+            <input type="text" id="display" disabled="disabled" style="width:240px; height:50px;margin-top:50px"><br/><br/>
+            <input type="button" value="7" onclick="showSeven()" style="width:50px; height:50px; margin-right:10px">
+            <input type="button" value="8" onclick="showEight()" style="width:50px; height:50px;margin-right:10px">
+            <input type="button" value="9" onclick="showNine()" style="width:50px; height:50px;margin-right:10px">
+            <input type="button" value="/" onclick="doDivide()" style="width:50px; height:50px"><br/><br/>
+            <input type="button" value="4" onclick="showFour()" style="width:50px; height:50px;margin-right:10px">
+            <input type="button" value="5" onclick="showFive()" style="width:50px; height:50px;margin-right:10px">
+            <input type="button" value="6" onclick="showSix()" style="width:50px; height:50px;margin-right:10px">
+            <input type="button" value="*" onclick="doMultiplication()" style="width:50px; height:50px"><br/><br/>
+            <input type="button" value="1" onclick="showOne()" style="width:50px; height:50px;margin-right:10px">
+            <input type="button" value="2" onclick="showTwo()" style="width:50px; height:50px;margin-right:10px">
+            <input type="button" value="3" onclick="showThree()" style="width:50px; height:50px;margin-right:10px">
+            <input type="button" value="-" onclick="doMinus()" style="width:50px; height:50px"><br/><br/>
+            <input type="button" value="0" onclick="showZero()" style="width:50px; height:50px;margin-right:10px">
+            <input type="button" value="=" onclick="doEquals()" style="width:50px; height:50px;margin-right:10px">
+            <input type="button" value="C" onclick="doClear()" style="width:50px; height:50px;margin-right:10px">
+            <input type="button" value="+" onclick="doAdd()" style="width:50px; height:50px">
+        </form>
+    </body>
+</html>
